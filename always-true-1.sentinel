@@ -1,0 +1,11 @@
+# Always True Policy
+# This is a simple Sentinel policy that always passes/returns true
+# Useful for testing or as a placeholder policy
+
+# Define a simple boolean variable
+always_pass = true
+
+# Main rule that always evaluates to true
+main = rule {
+    always_pass
+}
