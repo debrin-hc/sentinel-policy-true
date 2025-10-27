@@ -1,53 +1,40 @@
 policy "always-true-1" {
-    source = "./always-true.sentinel"
+    source = "./always-true-1.sentinel"
     enforcement_level = "advisory"
 }
 
-policy "always-true-2" {
-    source = "./always-true.sentinel"
+# Compliance Policies
+policy "require-resource-tagging" {
+    source = "./policies/compliance/require-resource-tagging.sentinel"
     enforcement_level = "advisory"
 }
 
-policy "always-true-3" {
-    source = "./always-true.sentinel"
+# Cost Management Policies
+policy "enforce-instance-limits" {
+    source = "./policies/cost-management/enforce-instance-limits.sentinel"
     enforcement_level = "advisory"
 }
 
-policy "always-true-4" {
-    source = "./always-true.sentinel"
+policy "prevent-expensive-storage" {
+    source = "./policies/cost-management/prevent-expensive-storage.sentinel"
     enforcement_level = "advisory"
 }
 
-policy "always-true-5" {
-    source = "./always-true.sentinel"
+# Security Policies
+policy "enforce-https-tls" {
+    source = "./policies/security/enforce-https-tls.sentinel"
     enforcement_level = "advisory"
 }
 
-policy "always-true-6" {
-    source = "./always-true.sentinel"
+policy "require-encryption-at-rest" {
+    source = "./policies/security/require-encryption-at-rest.sentinel"
     enforcement_level = "advisory"
 }
 
-policy "always-true-7" {
-    source = "./always-true.sentinel"
+policy "restrict-public-access" {
+    source = "./policies/security/restrict-public-access.sentinel"
     enforcement_level = "advisory"
 }
-
-policy "always-true-8" {
-    source = "./always-true.sentinel"
-    enforcement_level = "advisory"
-}
-
-policy "always-true-9" {
-    source = "./always-true.sentinel"
-    enforcement_level = "advisory"
-}
-
-policy "always-true-10" {
-    source = "./always-true.sentinel"
-    enforcement_level = "advisory"
-}
-
 
 
 
