@@ -2,13 +2,9 @@
 # This policy validates configuration loaded from JSON without making any API calls
 
 import "json"
-import "static" as static
 
 # Load configuration from external JSON file
-param config_file default "config.json"
-
-# Parse the JSON configuration
-config_data = json.unmarshal(static.read(config_file))
+config_data = json.load("./config.json")
 
 # Get instance limits from config
 max_instances = config_data.instance_limits.max_instances
