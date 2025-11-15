@@ -4,6 +4,6 @@ policy "prevent-expensive-storage" {
 }
 
 policy "require-resource-tagging" {
-    source = "./require-resource-tagging.sentinel"
+    source = "../compliance/require-resource-tagging.sentinel"
     enforcement_level = "advisory"
 }
