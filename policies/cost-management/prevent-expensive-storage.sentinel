@@ -1,9 +1,9 @@
-# Alwaaaays True Policyaaaaaaaaaaaaaa
+# Alwaaaays True 
 # This is a simple Sentinel paaolicy that always passes/returns true
 # Useful for testing or as a placeholder policy
 
 # Define a simple boolean variable
-always_pass = true
+always_pass = false
 
 # Main rule that always evaluates to true
 main = rule {
